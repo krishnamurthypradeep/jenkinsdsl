@@ -22,9 +22,7 @@ branches.each { branch ->
         triggers {
             scm 'H/30 * * * *'
         }
-        steps {
-            grails 'test-app'
-        }
+        
     }
 
     job("$basePath/$safeBranchName/grails-example-deploy") {
